@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms and Conditions</title>
+  <link rel="stylesheet" href="terms.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="logo-removebg-preview.png" alt="Company Logo" /></a>
+    </div>
+    <div class="nav-links"  id="sidebar">
+      <ul onclick="hideSidebar()"><a href="#"><i id="icon" class="fa-solid fa-xmark"></i></a></ul>
+            <a href="index.html">Home</a>
+            <a href="index.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="index.html">Sustainability</a>
+            <a href="index.html">contact us</a>
+    </div>
+
+         <div >
+            <a  class="hideOnMobile" href="#index.html">Home</a>
+            <a class="hideOnMobile" href="index.html">About</a>
+            <a class="hideOnMobile" href="services.html">Services</a>
+            <a class="hideOnMobile" href="#sustainability">Sustainability</a>
+            <a class="hideOnMobile" href="index.html">contact us</a>
+            <a class="menu-button" onclick="showSidebar()" href="#"><i  class="fa-solid fa-bars"></i></a>
+        </div>
+
+  </div>
+
+  <!-- Terms and Conditions -->
+  <section class="faq-section">
+    <h2 class="faq-heading">Terms and Conditions</h2>
+
+    <div class="faq">
+      <h3>1. Acceptance of Terms</h3>
+      <p>By using our website or services, you agree to comply with and be bound by these terms and conditions.</p>
+    </div>
+
+    <div class="faq">
+      <h3>2. Services</h3>
+      <p>We reserve the right to modify or discontinue any part of our services without prior notice at any time.</p>
+    </div>
+
+    <div class="faq">
+      <h3>3. User Responsibilities</h3>
+      <p>Users must not misuse our services or engage in illegal activities while using the platform.</p>
+    </div>
+
+    <div class="faq">
+      <h3>4. Intellectual Property</h3>
+      <p>All content on this site, including text, images, and logos, is the property of the business and protected by copyright laws.</p>
+    </div>
+
+    <div class="faq">
+      <h3>5. Limitation of Liability</h3>
+      <p>We are not liable for any damages resulting from the use or inability to use the website or services.</p>
+    </div>
+
+    <div class="faq">
+      <h3>6. Governing Law</h3>
+      <p>These terms are governed by and construed in accordance with the laws of the Republic of South Africa.</p>
+    </div>
+
+  </section>
+
+  <footer class="footer" id="contacts">
+  <div class="footer-content">
+    <a href="index.html"><img src="logo.jpeg" alt="Hellhound Enterprise Logo" class="footer-logo" /></a>
+    <div class="footer-columns">
+  <div class="footer-column">
+    <a href="services.html"></a>
+
+    <div class="footer-column">
+ <h4>Services</h4>
+    
+    <a href="services.html"><p>Construction</p></a>
+      <a href="services.html"><p>Engineering</p></a>
+      <a href="services.html"><p>IT Solutions</p></a>
+      <a href="services.html"><p>Environmental</p></a>
+  </div>
+
+
+  </div>
+  <div class="footer-column">
+    <h4>Support</h4>
+    
+    <a href="FAQs.html"><p>FAQs</p></a>
+    <a href="terms.html"><p>Terms & Conditions</p></a>
+    <a href="privacy.html"><p>Privacy Policy</p></a>
+  </div>
+  <div class="footer-column">
+  <h4>Contact</h4>
+    <p>
+    <i class="fas fa-envelope" style="color: #888; margin-right: 0.5rem;"></i>
+    <a href="mailto:Hellhoundenterprise@gmx.com" style="color: #888;">Hellhoundenterprise@gmx.com</a>
+  </p>
+    <p>
+    <i class="fas fa-phone" style="color: #888; margin-right: 0.5rem;"></i>
+    <a href="tel:+27698093772" style="color: #888;">+27 69 809 3776</a>
+  </p>
+   <p>
+    <i class="fas fa-map-marker-alt" style="color: #888; margin-right: 0.5rem;"></i>
+    129 Marico Street,<br>Saaiplaas, Virginia,<br>Free State, 9430
+  </p>
+  <i class="fab fa-whatsapp" style="color: #25D366; margin-right: 0.5rem;"></i>
+  <a href="https://wa.me/27698093772" target="_blank" style="color: #25D366;">+27 69 809 3776</a>
+</p>
+
+  
+</div>
+
+</div>
+
+  </div>
+  <p class="copyright">© 2024 Hellhound Enterprise. All rights reserved.</p>
+</footer>
+
+<script>
+  function showSidebar(){
+        const sidebar = document.querySelector('#sidebar')
+        sidebar.style.display = 'flex'
+  }
+
+    function hideSidebar(){
+        const sidebar = document.querySelector('#sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
+
+</body>
+</html>

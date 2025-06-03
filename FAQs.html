@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQs</title>
+  <link rel="stylesheet" href="faq.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html"><img src="logo-removebg-preview.png" alt="Logo" class="logo"></a>
+    <div class="nav-links"  id="sidebar">
+      <ul onclick="hideSidebar()"><a href="#"><i id="icon" class="fa-solid fa-xmark"></i></a></ul>
+            <a href="index.html">Home</a>
+            <a href="index.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="index.html">Sustainability</a>
+            <a href="index.html">contact us</a>
+    </div>
+
+               <div >
+            <a  class="hideOnMobile" href="index.html">Home</a>
+            <a class="hideOnMobile" href="index.html">About</a>
+            <a class="hideOnMobile" href="services.html">Services</a>
+            <a class="hideOnMobile" href="index.html">Sustainability</a>
+            <a class="hideOnMobile" href="index.html">contact us</a>
+            <a class="menu-button" onclick="showSidebar()" href="#"><i  class="fa-solid fa-bars"></i></a>
+        </div>
+  </nav>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h1 class="faq-heading">Frequently Asked Questions</h1>
+
+    <div class="faq">
+      <h3>1. What services do you offer?</h3>
+      <p>We provide a wide range of services including consulting, custom software development, and project management.</p>
+    </div>
+
+    <div class="faq">
+      <h3>2. How can I contact your team?</h3>
+      <p>You can contact us via email, phone, or our contact form on the website.</p>
+    </div>
+
+    <div class="faq">
+      <h3>3. What are your business hours?</h3>
+      <p>We are available Monday to Friday, from 8:00 AM to 5:00 PM.</p>
+    </div>
+
+    <div class="faq">
+      <h3>4. Do you offer support after project delivery?</h3>
+      <p>Yes, we offer ongoing support and maintenance depending on your selected package.</p>
+    </div>
+  </section>
+
+    <footer class="footer" id="contacts">
+  <div class="footer-content">
+    <a href="index.html"><img src="logo.jpeg" alt="Hellhound Enterprise Logo" class="footer-logo" /></a>
+    <div class="footer-columns">
+  <div class="footer-column">
+    <a href="services.html"></a>
+
+    <div class="footer-column">
+    <h4>Services</h4>
+    
+    <a href="services.html"><p>Construction</p></a>
+      <a href="services.html"><p>Engineering</p></a>
+      <a href="services.html"><p>IT Solutions</p></a>
+      <a href="services.html"><p>Environmental</p></a>
+  </div>
+
+
+  </div>
+  <div class="footer-column">
+    <h4>Support</h4>
+    
+    <a href="FAQs.html"><p>FAQs</p></a>
+    <a href="terms.html"><p>Terms & Conditions</p></a>
+    <a href="privacy.html"><p>Privacy Policy</p></a>
+  </div>
+  <div class="footer-column">
+  <h4>Contact</h4>
+    <p>
+    <i class="fas fa-envelope" style="color: #888; margin-right: 0.5rem;"></i>
+    <a href="mailto:Hellhoundenterprise@gmx.com" style="color: #888;">Hellhoundenterprise@gmx.com</a>
+  </p>
+    <p>
+    <i class="fas fa-phone" style="color: #888; margin-right: 0.5rem;"></i>
+    <a href="tel:+27698093772" style="color: #888;">+27 69 809 3776</a>
+  </p>
+   <p>
+    <i class="fas fa-map-marker-alt" style="color: #888; margin-right: 0.5rem;"></i>
+    129 Marico Street,<br>Saaiplaas, Virginia,<br>Free State, 9430
+  </p>
+  <i class="fab fa-whatsapp" style="color: #25D366; margin-right: 0.5rem;"></i>
+  <a href="https://wa.me/27698093772" target="_blank" style="color: #25D366;">+27 69 809 3776</a>
+</p>
+
+  
+</div>
+
+</div>
+
+  </div>
+  <p class="copyright">© 2024 Hellhound Enterprise. All rights reserved.</p>
+</footer>
+
+
+<script>
+  function showSidebar(){
+        const sidebar = document.querySelector('#sidebar')
+        sidebar.style.display = 'flex'
+  }
+
+    function hideSidebar(){
+        const sidebar = document.querySelector('#sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
+
+</body>
+</html>

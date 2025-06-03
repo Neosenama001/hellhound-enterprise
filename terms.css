@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2929;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.logo img {
+  height: 70px; /* or any size you want */
+  width: auto;
+  display: block;
+  
+}
+
+
+.logo img {
+  transform: scale(2.0); /* 1.2 means 120% size */
+  
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+
+
+/* FAQ Section */
+.faq-section {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Optional for vertical alignment */
+  text-align: center; /* Center text inside */
+}
+
+.faq-heading {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.faq {
+  width: 100%;
+  max-width: 800px;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  background-color: rgb(70, 67, 67);
+  border-left: 5px solid #7c7c7c;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  text-align: left; /* Keep text inside the FAQ boxes aligned left */
+}
+
+#sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50vh;
+  width: 250px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.479);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  line-height: 1cm;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 0.3cm 0cm 0cm 0.3cm;
+}
+
+
+#icon{
+  color: #ffffff;
+  transform: translateX(4cm);
+
+}
+
+.menu-button{
+  display: none;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  .main-section {
+    flex-wrap: wrap;
+  }
+
+  .info-block {
+    width: 48%;
+    margin-bottom: 2rem;
+  }
+
+     .hideOnMobile{
+  display: none;
+}
+
+.phone{
+  display: none;
+}
+
+  .menu-button{
+  display: block;
+
+}
+}
+
+@media (max-width: 600px) {
+  .info-block {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: #888;
+  padding: 2rem 3rem;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid #444;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 4rem; /* gap between image and columns */
+  align-items: flex-start;
+}
+
+
+.footer-logo {
+  width: 8cm;
+  height: auto;
+  border-radius: 1cm;
+  
+}
+
+.footer-text {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #888;
+  text-align: right;  /* Right align the text */
+  transform: translateX(8cm);
+}
+
+.footer-columns {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.footer-column {
+  flex: 1;
+  min-width: 180px;
+  color: #ccc;
+}
+
+.footer-column h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  border-bottom: 2px solid #555;
+  padding-bottom: 0.5rem;
+}
+
+.footer-column p,
+.footer-column a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-column a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+.footer-text p {
+  margin: 0.3rem 0;
+}
+
+.footer-text a {
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+footer p.copyright {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin: 1.5rem 0 0 0;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    margin: 0 0 1.5rem 0;
+    width: 120px;
+  }
+  
+  .footer-columns {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .footer-column {
+    min-width: auto;
+  }
+}
